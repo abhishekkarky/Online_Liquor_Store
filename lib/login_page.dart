@@ -13,18 +13,26 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       backgroundColor: Colors.white12,
       body: SafeArea(
-
-        // For Heading Text
         child: Center(
+
+          //For Image
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
+                decoration: BoxDecoration(
+                  color: Colors.white70,
+                  border: Border.all(color: Colors.white),
+                  borderRadius: BorderRadius.circular(10),
+                ),
                 child: Image.asset('assets/images/Kanpai_logo.png'),
-                width: 300,
-                height: 300,
+                width: 350,
+                height: 290,
               ),
+
+              //For Heading Text
               Container(
+                padding: EdgeInsets.only(top: 14.0),
               child: const Text("Login here...",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
