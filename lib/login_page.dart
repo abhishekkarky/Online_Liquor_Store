@@ -52,6 +52,9 @@ class _LoginPageState extends State<LoginPage> {
               ),
               child: const TextField(
                 decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.email,
+                  color: Color(0xFFF28A1C),
+                  ),
                   border: InputBorder.none,
                   hintText: "Enter your email...",
                 ),
@@ -70,6 +73,9 @@ class _LoginPageState extends State<LoginPage> {
               child: const TextField(
                 obscureText: true,
                 decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.password,
+                    color: Color(0xFFF28A1C),
+                  ),
                   border: InputBorder.none,
                   hintText: "Enter your password...",
                 ),
@@ -94,6 +100,32 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () { },
               ),
               ),
+
+              //For forgot password
+              Row(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 20.0, left: 80.0),
+                    child: Text('Forgot your password?',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white70,
+                    ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: 20.0),
+                    child: Text(' Click here!!!',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFFF28A1C),
+                      ),
+                    ),
+                  ),
+                ],
+              )
           ],),
         ),
       ),

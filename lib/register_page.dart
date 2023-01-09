@@ -52,6 +52,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 ),
                 child: const TextField(
                   decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.abc,
+                    color: Color(0xFFF28A1C),
+                  ),
                     border: InputBorder.none,
                     hintText: "Enter your name...",
                   ),
@@ -69,6 +72,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 ),
                 child: const TextField(
                   decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.email,
+                      color: Color(0xFFF28A1C),
+                    ),
                     border: InputBorder.none,
                     hintText: "Enter your email...",
                   ),
@@ -86,6 +92,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 ),
                 child: const TextField(
                   decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.password,
+                      color: Color(0xFFF28A1C),
+                    ),
                     border: InputBorder.none,
                     hintText: "Create password...",
                   ),
@@ -103,6 +112,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 ),
                 child: const TextField(
                   decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.password,
+                      color: Color(0xFFF28A1C),
+                    ),
                     border: InputBorder.none,
                     hintText: "Confirm Password...",
                   ),
