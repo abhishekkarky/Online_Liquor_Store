@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kanpai_online_store/register_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -43,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
 
             // For Input Field
             Container(
-              margin: EdgeInsets.only(top:60, left: 20, right: 20),
+              margin: EdgeInsets.only(top:30, left: 20, right: 20),
               padding: EdgeInsets.all(5),
               decoration: BoxDecoration(
                 color: Colors.white70,
@@ -63,7 +64,7 @@ class _LoginPageState extends State<LoginPage> {
 
             // For Password Field
             Container(
-              margin: EdgeInsets.only(top:20, left: 20, right: 20),
+              margin: EdgeInsets.only(top:15, left: 20, right: 20),
               padding: EdgeInsets.all(5),
               decoration: BoxDecoration(
                 color: Colors.white70,
@@ -82,10 +83,24 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
 
+            //For forgot password
+            Container(
+              margin: EdgeInsets.only(top: 15.0, left: 230.0),
+              child: InkWell(
+                onTap: () {},
+                child: Text('Forgot your password?',
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFF28A1C),
+                  ),
+                ),
+              ),
+            ),
 
             // For login Button
             Container(
-              margin: EdgeInsets.only(top: 25.0),
+              margin: EdgeInsets.only(top: 15.0),
               height: 55,
               width: 185,
               child: ElevatedButton(
@@ -93,7 +108,7 @@ class _LoginPageState extends State<LoginPage> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0xFFF28A1C),
                   textStyle: const TextStyle(
-                    color: Colors.yellow,
+                    color: Color(0xFFF28A1C),
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -101,31 +116,36 @@ class _LoginPageState extends State<LoginPage> {
               ),
               ),
 
-              //For forgot password
+              // For Signup Page
               Row(
                 children: [
                   Container(
                     margin: EdgeInsets.only(top: 20.0, left: 80.0),
-                    child: Text('Forgot your password?',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white70,
-                    ),
+                    child: Text("Don't have an account?",
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white70,
+                      ),
                     ),
                   ),
                   Container(
                     margin: EdgeInsets.only(top: 20.0),
-                    child: Text(' Click here!!!',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFFF28A1C),
+                    child: InkWell(
+                      onTap: () {Navigator.of(context).
+                      pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>RegisterPage()));},
+                      child: Text(' Click here!!!',
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFFF28A1C),
+                        ),
                       ),
                     ),
                   ),
                 ],
-              )
+              ),
+
           ],),
         ),
       ),
