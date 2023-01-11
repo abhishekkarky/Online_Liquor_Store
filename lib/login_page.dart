@@ -88,7 +88,9 @@ class _LoginPageState extends State<LoginPage> {
             Container(
               margin: EdgeInsets.only(top: 15.0, left: 230.0),
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  widget.changeScreen("FORGOT_PASSWORD");
+                },
                 child: Text('Forgot your password?',
                   style: TextStyle(
                     fontSize: 13,

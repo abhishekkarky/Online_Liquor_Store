@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:kanpai_online_store/forgot_password.dart';
 import 'package:kanpai_online_store/login_page.dart';
 import 'package:kanpai_online_store/register_page.dart';
 
@@ -24,6 +25,12 @@ class _AccountScreenState extends State<AccountScreen> {
           });
         case "LOGIN":
           return LoginPage(changeScreen: (String page){
+            setState(() {
+              authPage = page;
+            });
+          });
+        case "FORGOT_PASSWORD":
+          return ForgotPassword(changeScreen: (String page){
             setState(() {
               authPage = page;
             });

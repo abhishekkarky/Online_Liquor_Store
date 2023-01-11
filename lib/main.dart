@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:kanpai_online_store/account_screen.dart';
+import 'package:kanpai_online_store/forgot_password.dart';
 import 'package:kanpai_online_store/login_page.dart';
-import 'package:kanpai_online_store/profile.dart';
 import 'package:kanpai_online_store/register_page.dart';
 import 'package:sidebarx/sidebarx.dart';
 
@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
       backgroundColor: Colors.white12,
       body: tabs[_currentIndex],
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 12),
+        padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 2),
         child: GNav(
             iconSize: 25,
             color: Colors.white,
