@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:kanpai_online_store/register_page.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  LoginPage({Key? key, required this.changeScreen}) : super(key: key);
+  Function(String page) changeScreen ;
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -112,7 +113,8 @@ class _LoginPageState extends State<LoginPage> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                onPressed: () { },
+                onPressed: () {
+                },
               ),
               ),
 
@@ -132,8 +134,10 @@ class _LoginPageState extends State<LoginPage> {
                   Container(
                     margin: EdgeInsets.only(top: 20.0),
                     child: InkWell(
-                      onTap: () {Navigator.of(context).
-                      pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>RegisterPage()));},
+                      onTap: () {
+
+                        widget.changeScreen("REGISTER");
+                        },
                       child: Text(' Click here!!!',
                         style: TextStyle(
                           fontSize: 15,

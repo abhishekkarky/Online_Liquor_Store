@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:kanpai_online_store/account_screen.dart';
 import 'package:kanpai_online_store/login_page.dart';
 import 'package:kanpai_online_store/profile.dart';
 import 'package:kanpai_online_store/register_page.dart';
@@ -32,7 +33,7 @@ class _HomeState extends State<Home> {
     Center(child: Text('Home'),),
     Center(child: Text('Search'),),
     Center(child: Text('Cart'),),
-    RegisterPage(),
+    AccountScreen(),
   ];
 
   @override
