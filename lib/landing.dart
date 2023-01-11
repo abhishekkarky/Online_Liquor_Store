@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Landing extends StatefulWidget {
-  const Landing({Key? key}) : super(key: key);
+class LandingPage extends StatefulWidget {
+  const LandingPage({Key? key}) : super(key: key);
 
   @override
-  State<Landing> createState() => _LandingState();
+  State<LandingPage> createState() => _LandingPageState();
 }
 
-class _LandingState extends State<Landing> {
+class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();
