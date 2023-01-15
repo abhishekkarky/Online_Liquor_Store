@@ -5,7 +5,6 @@ import 'package:kanpai_online_store/forgot_password.dart';
 import 'package:kanpai_online_store/landing.dart';
 import 'package:kanpai_online_store/login_page.dart';
 import 'package:kanpai_online_store/register_page.dart';
-import 'package:sidebarx/sidebarx.dart';
 
 void main() {
   runApp(const MyApp());
