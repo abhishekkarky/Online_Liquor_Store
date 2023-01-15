@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:kanpai_online_store/account_screen.dart';
 import 'package:kanpai_online_store/forgot_password.dart';
+import 'package:kanpai_online_store/landing.dart';
 import 'package:kanpai_online_store/login_page.dart';
 import 'package:kanpai_online_store/register_page.dart';
 import 'package:sidebarx/sidebarx.dart';
@@ -30,7 +31,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final tabs = [
-    Center(child: Text('Home'),),
+    LandingPage(),
     Center(child: Text('Search'),),
     Center(child: Text('Cart'),),
     AccountScreen(),
