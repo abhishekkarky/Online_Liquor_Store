@@ -46,8 +46,8 @@ class _LandingPageState extends State<LandingPage> {
                   children: [
                     Container(
                       child: Image.asset('assets/images/Whiskey.jpg',
-                        width: 300,
-                        height: 350,
+                        width: 400,
+                        height: 220,
                         fit: BoxFit.cover,
                       ),
                     margin: EdgeInsets.only(top: 15),
@@ -65,6 +65,155 @@ class _LandingPageState extends State<LandingPage> {
                   ],
                 ),
               ),
+
+                InkWell(
+                  onTap: (){
+
+                  },
+                  child: Stack(
+                    children: [
+                      Container(
+                        child: Image.asset('assets/images/Vodka.jpg',
+                          width: 400,
+                          height: 220,
+                          fit: BoxFit.cover,
+                        ),
+                        margin: EdgeInsets.only(top: 15),
+                      ),
+                      Positioned.fill(
+                        child: Align(
+                            alignment: Alignment.bottomRight,
+                            child: Text("Vodka",
+                              style: TextStyle(color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            )
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+
+                InkWell(
+                  onTap: (){
+
+                  },
+                  child: Stack(
+                    children: [
+                      Container(
+                        child: Image.asset('assets/images/Wine.jpg',
+                          width: 400,
+                          height: 220,
+                          fit: BoxFit.cover,
+                        ),
+                        margin: EdgeInsets.only(top: 15),
+                      ),
+                      Positioned.fill(
+                        child: Align(
+                            alignment: Alignment.bottomRight,
+                            child: Text("Wine",
+                              style: TextStyle(color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            )
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+
+                InkWell(
+                  onTap: (){
+
+                  },
+                  child: Stack(
+                    children: [
+                      Container(
+                        child: Image.asset('assets/images/Gin.jpg',
+                          width: 400,
+                          height: 220,
+                          fit: BoxFit.cover,
+                        ),
+                        margin: EdgeInsets.only(top: 15),
+                      ),
+                      Positioned.fill(
+                        child: Align(
+                            alignment: Alignment.bottomRight,
+                            child: Text("Gin",
+                              style: TextStyle(color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            )
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+
+                InkWell(
+                  onTap: (){
+
+                  },
+                  child: Stack(
+                    children: [
+                      Container(
+                        child: Image.asset('assets/images/Tequila.jpg',
+                          width: 400,
+                          height: 220,
+                          fit: BoxFit.cover,
+                        ),
+                        margin: EdgeInsets.only(top: 15),
+                      ),
+                      Positioned.fill(
+                        child: Align(
+                            alignment: Alignment.bottomRight,
+                            child: Text("Tequila",
+                              style: TextStyle(color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            )
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+
+                InkWell(
+                  onTap: (){
+
+                  },
+                  child: Stack(
+                    children: [
+                      Container(
+                        // decoration: BoxDecoration(
+                        //   boxShadow: [
+                        //     BoxShadow(
+                        //       color: Colors.white,
+                        //       blurRadius: 25.0,
+                        //       spreadRadius: 25,
+                        //     )
+                        //   ],
+                        // ),
+                        child: Image.asset('assets/images/cigarette.jpg',
+                          width: 400,
+                          height: 220,
+                          fit: BoxFit.cover,
+                        ),
+                        margin: EdgeInsets.only(top: 15),
+                      ),
+                      Positioned.fill(
+                        child: Align(
+                            alignment: Alignment.bottomRight,
+                            child: Text("Tobacco",
+                              style: TextStyle(color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            )
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
