@@ -64,24 +64,24 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               ),
 
             //  For old password
-              Container(
-                margin: EdgeInsets.only(top:15, left: 20, right: 20),
-                padding: EdgeInsets.all(5),
-                decoration: BoxDecoration(
-                  color: Colors.white70,
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: const TextField(
-                  decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.password,
-                      color: Color(0xFFF28A1C),
-                    ),
-                    border: InputBorder.none,
-                    hintText: "Enter your old password...",
-                  ),
-                ),
-              ),
+            //   Container(
+            //     margin: EdgeInsets.only(top:15, left: 20, right: 20),
+            //     padding: EdgeInsets.all(5),
+            //     decoration: BoxDecoration(
+            //       color: Colors.white70,
+            //       border: Border.all(color: Colors.white),
+            //       borderRadius: BorderRadius.circular(10),
+            //     ),
+            //     child: const TextField(
+            //       decoration: InputDecoration(
+            //         prefixIcon: Icon(Icons.password,
+            //           color: Color(0xFFF28A1C),
+            //         ),
+            //         border: InputBorder.none,
+            //         hintText: "Enter your old password...",
+            //       ),
+            //     ),
+            //   ),
 
             //  For new password
               Container(
