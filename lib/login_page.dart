@@ -122,9 +122,10 @@ class _LoginPageState extends State<LoginPage> {
 
               // For Signup Page
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(top: 20.0, left: 80.0),
+                    margin: EdgeInsets.only(top: 20.0),
                     child: Text("Don't have an account?",
                       style: TextStyle(
                         fontSize: 15,

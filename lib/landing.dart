@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class LandingPage extends StatefulWidget {
-  const LandingPage({Key? key}) : super(key: key);
+  LandingPage({Key? key, required this.changeScreen}) : super(key: key);
+  Function (String page) changeScreen;
 
   @override
   State<LandingPage> createState() => _LandingPageState();
@@ -40,7 +41,7 @@ class _LandingPageState extends State<LandingPage> {
               // For products
               InkWell(
                 onTap: (){
-
+                  widget.changeScreen("WHISKEY");
                 },
                 child: Stack(
                   children: [
