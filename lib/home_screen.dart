@@ -28,6 +28,36 @@ class _HomePageState extends State<HomePage> {
               authPage = page;
             });
           });
+        case("VODKA"):
+          return WhiskeyPage(changeScreen: (String page){
+            setState(() {
+              authPage = page;
+            });
+          });
+        case("WINE"):
+          return WhiskeyPage(changeScreen: (String page){
+            setState(() {
+              authPage = page;
+            });
+          });
+        case("GIN"):
+          return WhiskeyPage(changeScreen: (String page){
+            setState(() {
+              authPage = page;
+            });
+          });
+        case("TEQUILA"):
+          return WhiskeyPage(changeScreen: (String page){
+            setState(() {
+              authPage = page;
+            });
+          });
+        case("TOBACCO"):
+          return WhiskeyPage(changeScreen: (String page){
+            setState(() {
+              authPage = page;
+            });
+          });
         default:
           return LandingPage(changeScreen: (String page){
             setState(() {

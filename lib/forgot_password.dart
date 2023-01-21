@@ -13,7 +13,16 @@ class _ForgotPasswordState extends State<ForgotPassword> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white12,
+      appBar: AppBar(
+        backgroundColor: Colors.black12,
+        leading: IconButton(
+          onPressed: () {
+            widget.changeScreen("LOGIN");
+          },
+          icon: Icon(Icons.arrow_back_ios),
+        ),
+      ),
+      backgroundColor: Colors.black12,
       body: SafeArea(
         child: Center(
           child: Column(
@@ -52,7 +61,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                   border: Border.all(color: Colors.white),
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: const TextField(
+                child: TextField(
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.email,
                       color: Color(0xFFF28A1C),

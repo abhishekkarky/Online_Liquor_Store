@@ -13,12 +13,22 @@ class WhiskeyPage extends StatefulWidget {
 class _WhiskeyPageState extends State<WhiskeyPage> {
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      leading: IconButton(
-          onPressed: () {
-            widget.changeScreen("LANDING");
-          },
-          icon: Icon(Icons.arrow_back_ios),
+    return Scaffold(
+      backgroundColor: Colors.black12,
+      appBar: AppBar(
+        backgroundColor: Color(0xFFF28A1C),
+        leading: IconButton(
+            onPressed: () {
+              widget.changeScreen("LANDING");
+            },
+            icon: Icon(Icons.arrow_back_ios),
+        ),
+        title: Text('Whiskey'),
+        foregroundColor: Colors.black,
+        titleTextStyle: TextStyle(
+          fontSize: 25,
+          color: Colors.black,
+        ),
       ),
     );
   }

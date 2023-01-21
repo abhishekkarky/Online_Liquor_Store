@@ -12,7 +12,16 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white12,
+        appBar: AppBar(
+          backgroundColor: Color(0xFFF28A1C),
+          title: Text('Kanpai Online Store'),
+          foregroundColor: Color(0xFFF28A1C),
+          titleTextStyle: TextStyle(
+            fontSize: 25,
+            color: Colors.black,
+          ),
+        ),
+      backgroundColor: Colors.black12,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(

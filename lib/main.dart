@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Home(),
     );
   }
@@ -47,6 +48,7 @@ class _HomeState extends State<Home> {
         child: GNav(
             iconSize: 25,
             color: Colors.white,
+            backgroundColor: Colors.black12,
             gap: 8,
             tabBackgroundColor: Color(0xFFF28A1C),
             haptic: true,
