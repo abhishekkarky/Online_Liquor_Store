@@ -14,14 +14,16 @@ class _ForgotPasswordState extends State<ForgotPassword> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black12,
+        backgroundColor: Color(0xFFF28A1C),
         leading: IconButton(
           onPressed: () {
             widget.changeScreen("LOGIN");
           },
           icon: Icon(Icons.arrow_back_ios),
+          color: Colors.black,
         ),
       ),
+
       backgroundColor: Colors.black12,
       body: SafeArea(
         child: Center(
@@ -137,13 +139,14 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 margin: EdgeInsets.only(top: 20.0),
                 height: 55,
                 width: 185,
-                child: ElevatedButton(
+                child: TextButton(
                   child: Text('Change password'),
-                  style: ElevatedButton.styleFrom(
+                  style: TextButton.styleFrom(
+                    primary: Colors.black,
                     backgroundColor: Color(0xFFF28A1C),
                     textStyle: const TextStyle(
                       color: Color(0xFFF28A1C),
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w700,
                     ),
                   ),
                   onPressed: () { },

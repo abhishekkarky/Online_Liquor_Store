@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kanpai_online_store/landing.dart';
+import 'package:kanpai_online_store/vodka.dart';
 import 'package:kanpai_online_store/whiskey.dart';
 
 class HomePage extends StatefulWidget {
@@ -29,7 +30,7 @@ class _HomePageState extends State<HomePage> {
             });
           });
         case("VODKA"):
-          return WhiskeyPage(changeScreen: (String page){
+          return VodkaPage(changeScreen: (String page){
             setState(() {
               authPage = page;
             });

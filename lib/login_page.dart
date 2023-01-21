@@ -13,6 +13,17 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color(0xFFF28A1C),
+        leading: IconButton(
+          onPressed: () {
+            widget.changeScreen("REGISTER");
+          },
+          icon: Icon(Icons.arrow_back_ios),
+          color: Colors.black,
+        ),
+      ),
+
       backgroundColor: Colors.black12,
       body: SafeArea(
         child: Center(
@@ -106,13 +117,13 @@ class _LoginPageState extends State<LoginPage> {
               margin: EdgeInsets.only(top: 15.0),
               height: 55,
               width: 185,
-              child: ElevatedButton(
+              child: TextButton(
                 child: Text('Login'),
-                style: ElevatedButton.styleFrom(
+                style: TextButton.styleFrom(
+                  primary: Colors.black,
                   backgroundColor: Color(0xFFF28A1C),
                   textStyle: const TextStyle(
-                    color: Color(0xFFF28A1C),
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w700,
                   ),
                 ),
                 onPressed: () {

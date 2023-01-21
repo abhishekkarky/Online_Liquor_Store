@@ -129,13 +129,13 @@ class _RegisterPageState extends State<RegisterPage> {
                   margin: EdgeInsets.only(top: 20.0),
                   height: 55,
                   width: 185,
-                  child: ElevatedButton(
+                  child: TextButton(
                     child: Text('Signup'),
-                    style: ElevatedButton.styleFrom(
+                    style: TextButton.styleFrom(
+                      primary: Colors.black,
                       backgroundColor: Color(0xFFF28A1C),
                       textStyle: const TextStyle(
-                        color: Color(0xFFF28A1C),
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w700,
                       ),
                     ),
                     onPressed: () { },

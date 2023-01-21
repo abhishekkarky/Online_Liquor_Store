@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:kanpai_online_store/home_screen.dart';
-import 'package:kanpai_online_store/landing.dart';
 
-class WhiskeyPage extends StatefulWidget {
-  WhiskeyPage({Key? key, required this.changeScreen}) : super(key: key);
+class VodkaPage extends StatefulWidget {
+  VodkaPage({Key? key, required this.changeScreen}) : super(key: key);
   Function (String page) changeScreen;
 
   @override
-  State<WhiskeyPage> createState() => _WhiskeyPageState();
+  State<VodkaPage> createState() => _VodkaPageState();
 }
 
-class _WhiskeyPageState extends State<WhiskeyPage> {
+class _VodkaPageState extends State<VodkaPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,12 +16,12 @@ class _WhiskeyPageState extends State<WhiskeyPage> {
       appBar: AppBar(
         backgroundColor: Color(0xFFF28A1C),
         leading: IconButton(
-            onPressed: () {
-              widget.changeScreen("LANDING");
-            },
-            icon: Icon(Icons.arrow_back_ios),
+          onPressed: () {
+            widget.changeScreen("LANDING");
+          },
+          icon: Icon(Icons.arrow_back_ios),
         ),
-        title: Text('Whiskey'),
+        title: Text('Vodka'),
         foregroundColor: Colors.black,
         titleTextStyle: TextStyle(
           fontSize: 25,

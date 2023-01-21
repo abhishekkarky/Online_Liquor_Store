@@ -14,13 +14,16 @@ class _LandingPageState extends State<LandingPage> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Color(0xFFF28A1C),
+          leading: Image.asset('assets/images/logo.png'),
           title: Text('Kanpai Online Store'),
           foregroundColor: Color(0xFFF28A1C),
           titleTextStyle: TextStyle(
             fontSize: 25,
+            fontWeight: FontWeight.w600,
             color: Colors.black,
           ),
         ),
+
       backgroundColor: Colors.black12,
       body: SafeArea(
         child: Center(
@@ -31,7 +34,7 @@ class _LandingPageState extends State<LandingPage> {
 
                 // For image
                 Container(
-                // margin: EdgeInsets.only(top: 5),
+                margin: EdgeInsets.only(top: 5),
                 child: Image.asset('assets/images/homepage_img.jpg'),
               ),
 
@@ -78,7 +81,7 @@ class _LandingPageState extends State<LandingPage> {
 
                 InkWell(
                   onTap: (){
-
+                    widget.changeScreen("VODKA");
                   },
                   child: Stack(
                     children: [
