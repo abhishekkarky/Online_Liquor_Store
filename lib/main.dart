@@ -18,6 +18,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Home(),
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
+        iconTheme: IconThemeData(
+          color: Colors.black
+        )
+      ),
     );
   }
 }
@@ -33,9 +39,8 @@ class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final tabs = [
     HomePage(),
-    Center(child: Text('Search'),),
-    Center(child: Text('Cart'),),
-    AccountScreen(),
+    Center(child: Text('Notifications'),),
+    Center(child: Text('Cart'),)
   ];
 
   @override
@@ -61,16 +66,12 @@ class _HomeState extends State<Home> {
                   // Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context) => LandingPage()));
                 },
               ),
-              GButton(icon: Icons.search,
-                text: ('Search'),
+              GButton(icon: Icons.notifications,
+                text: ('Notifications'),
                 textColor: Colors.black,
               ),
               GButton(icon: Icons.shopping_cart,
                 text: ('Cart'),
-                textColor: Colors.black,
-              ),
-              GButton(icon: Icons.person,
-                text: ('Profile'),
                 textColor: Colors.black,
               ),
             ],

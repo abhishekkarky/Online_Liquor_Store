@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:kanpai_online_store/landing.dart';
+import 'package:kanpai_online_store/register_page.dart';
 import 'package:kanpai_online_store/vodka.dart';
 import 'package:kanpai_online_store/whiskey.dart';
+
+import 'forgot_password.dart';
+import 'login_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -55,6 +59,24 @@ class _HomePageState extends State<HomePage> {
           });
         case("TOBACCO"):
           return WhiskeyPage(changeScreen: (String page){
+            setState(() {
+              authPage = page;
+            });
+          });
+        case "REGISTER":
+          return RegisterPage(changeScreen: (String page){
+            setState(() {
+              authPage = page;
+            });
+          });
+        case "LOGIN":
+          return LoginPage(changeScreen: (String page){
+            setState(() {
+              authPage = page;
+            });
+          });
+        case "FORGOT_PASSWORD":
+          return ForgotPassword(changeScreen: (String page){
             setState(() {
               authPage = page;
             });

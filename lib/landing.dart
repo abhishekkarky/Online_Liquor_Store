@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LandingPage extends StatefulWidget {
   LandingPage({Key? key, required this.changeScreen}) : super(key: key);
@@ -14,7 +15,6 @@ class _LandingPageState extends State<LandingPage> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Color(0xFFF28A1C),
-          leading: Image.asset('assets/images/logo.png'),
           title: Text('Kanpai Online Store'),
           foregroundColor: Color(0xFFF28A1C),
           titleTextStyle: TextStyle(
@@ -22,6 +22,20 @@ class _LandingPageState extends State<LandingPage> {
             fontWeight: FontWeight.w600,
             color: Colors.black,
           ),
+          actions: [
+            InkWell(
+              onTap: () {
+                Navigator.push(context, widget.changeScreen('REGISTER'));
+
+              },
+              child: Padding(
+                padding: const EdgeInsets.only(right: 20.0),
+                child: Icon(Icons.person_rounded,
+                  color: Colors.black,
+                ),
+              ),
+            )
+          ],
         ),
 
       backgroundColor: Colors.black12,
@@ -31,17 +45,53 @@ class _LandingPageState extends State<LandingPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
+                  child: Text('Find your best booze to drink',
+                    style: GoogleFonts.bebasNeue(
+                      fontSize: 60,
+                      color: Colors.grey.shade300,
+                    ),
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  child: TextField(
+                    style: TextStyle(
+                      // height: 1.5,
+                      fontSize: 18,
+                      color: Colors.grey,
+                    ),
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.search,
+                      color: Colors.orange,),
+                      hintText: ('Find your drink...'),
+                      hintStyle: TextStyle(color: Colors.grey),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.grey,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
 
                 // For image
-                Container(
-                margin: EdgeInsets.only(top: 5),
-                child: Image.asset('assets/images/homepage_img.jpg'),
-              ),
+              //   Container(
+              //   margin: EdgeInsets.only(top: 20),
+              //   child: Image.asset('assets/images/homepage_img.jpg'),
+              // ),
 
               //  For Category Text
               Container(
-                margin: EdgeInsets.only(top: 20, left: 26),
-                child: Text('You might be searching for these Categories :',
+                margin: EdgeInsets.only(top: 20,bottom: 10),
+                child: Text('Search By Categories',
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.w800,
@@ -58,7 +108,7 @@ class _LandingPageState extends State<LandingPage> {
                 child: Stack(
                   children: [
                     Container(
-                      child: Image.asset('assets/images/Whiskey.jpg',
+                      child: Image.asset('assets/images/jack_daniels.jpg',
                         width: 400,
                         height: 220,
                         fit: BoxFit.cover,

@@ -13,6 +13,16 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black12,
+      appBar: AppBar(
+        backgroundColor: Color(0xFFF28A1C),
+        leading: IconButton(
+          onPressed: () {
+            widget.changeScreen("LANDING");
+          },
+          icon: Icon(Icons.arrow_back_ios),
+          color: Colors.black,
+        ),
+      ),
       body: SafeArea(
         maintainBottomViewPadding: true,
         child: Center(
@@ -23,6 +33,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
                 //For Image
                 Container(
+                  margin: EdgeInsets.only(top: 10.0),
                   decoration: BoxDecoration(
                     color: Colors.white70,
                     border: Border.all(color: Colors.white),
@@ -46,7 +57,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
                 // For Name Field
                 Container(
-                  margin: EdgeInsets.only(top:30, left: 20, right: 20),
+                  margin: EdgeInsets.only(top:20, left: 20, right: 20),
                   padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
                     color: Colors.white70,
@@ -66,7 +77,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
                 // For  Field
                 Container(
-                  margin: EdgeInsets.only(top:15, left: 20, right: 20),
+                  margin: EdgeInsets.only(top:10, left: 20, right: 20),
                   padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
                     color: Colors.white70,
@@ -86,7 +97,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
                 // For Password Field
                 Container(
-                  margin: EdgeInsets.only(top:15, left: 20, right: 20),
+                  margin: EdgeInsets.only(top:10, left: 20, right: 20),
                   padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
                     color: Colors.white70,
@@ -106,7 +117,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
                 // For Confirm Password Field
                 Container(
-                  margin: EdgeInsets.only(top:15, left: 20, right: 20),
+                  margin: EdgeInsets.only(top:10, left: 20, right: 20),
                   padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
                     color: Colors.white70,
@@ -126,7 +137,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
                 // For Signup Button
                 Container(
-                  margin: EdgeInsets.only(top: 20.0),
+                  margin: EdgeInsets.only(top: 15.0),
                   height: 55,
                   width: 185,
                   child: TextButton(
@@ -147,7 +158,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(top: 20.0),
+                      margin: EdgeInsets.only(top: 15.0),
                       child: Center(
                         child: Text('Already have an account?',
                           style: TextStyle(
@@ -159,7 +170,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 20.0),
+                      margin: EdgeInsets.only(top: 15.0),
                       child: InkWell(
                         onTap: () {
                           widget.changeScreen("LOGIN");
