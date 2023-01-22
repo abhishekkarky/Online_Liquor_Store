@@ -15,7 +15,7 @@ class _LandingPageState extends State<LandingPage> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Color(0xFFF28A1C),
-          title: Text('Kanpai Online Store'),
+          title: Text('Kanpai Store'),
           foregroundColor: Color(0xFFF28A1C),
           titleTextStyle: TextStyle(
             fontSize: 25,
