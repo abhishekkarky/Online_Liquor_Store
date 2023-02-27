@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:kanpai_online_store/landing.dart';
 import 'package:kanpai_online_store/register_page.dart';
+import 'package:kanpai_online_store/tequila.dart';
+import 'package:kanpai_online_store/tobacco.dart';
 import 'package:kanpai_online_store/vodka.dart';
 import 'package:kanpai_online_store/whiskey.dart';
+import 'package:kanpai_online_store/wine.dart';
 
 import 'forgot_password.dart';
+import 'gin.dart';
 import 'login_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -40,25 +44,25 @@ class _HomePageState extends State<HomePage> {
             });
           });
         case("WINE"):
-          return WhiskeyPage(changeScreen: (String page){
+          return WinePage(changeScreen: (String page){
             setState(() {
               authPage = page;
             });
           });
         case("GIN"):
-          return WhiskeyPage(changeScreen: (String page){
+          return GinPage(changeScreen: (String page){
             setState(() {
               authPage = page;
             });
           });
         case("TEQUILA"):
-          return WhiskeyPage(changeScreen: (String page){
+          return TequilaPage(changeScreen: (String page){
             setState(() {
               authPage = page;
             });
           });
         case("TOBACCO"):
-          return WhiskeyPage(changeScreen: (String page){
+          return TobaccoPage(changeScreen: (String page){
             setState(() {
               authPage = page;
             });

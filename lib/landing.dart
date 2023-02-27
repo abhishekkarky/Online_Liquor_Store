@@ -159,7 +159,7 @@ class _LandingPageState extends State<LandingPage> {
 
                 InkWell(
                   onTap: (){
-
+                    widget.changeScreen("WINE");
                   },
                   child: Stack(
                     children: [
@@ -187,7 +187,7 @@ class _LandingPageState extends State<LandingPage> {
 
                 InkWell(
                   onTap: (){
-
+                    widget.changeScreen("GIN");
                   },
                   child: Stack(
                     children: [
@@ -215,7 +215,7 @@ class _LandingPageState extends State<LandingPage> {
 
                 InkWell(
                   onTap: (){
-
+                    widget.changeScreen("TEQUILA");
                   },
                   child: Stack(
                     children: [
@@ -243,7 +243,7 @@ class _LandingPageState extends State<LandingPage> {
 
                 InkWell(
                   onTap: (){
-
+                    widget.changeScreen("TOBACCO");
                   },
                   child: Stack(
                     children: [
