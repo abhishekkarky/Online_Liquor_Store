@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:kanpai_online_store/account_screen.dart';
+import 'package:kanpai_online_store/cart.dart';
 import 'package:kanpai_online_store/forgot_password.dart';
 import 'package:kanpai_online_store/home_screen.dart';
 import 'package:kanpai_online_store/landing.dart';
 import 'package:kanpai_online_store/login_page.dart';
 import 'package:kanpai_online_store/register_page.dart';
+
+import 'notifications.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,8 +42,8 @@ class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final tabs = [
     HomePage(),
-    Center(child: Text('Notifications'),),
-    Center(child: Text('Cart'),)
+    NotficationPage(),
+    CartPage(),
   ];
 
   @override
